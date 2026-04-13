@@ -24,6 +24,14 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    //plugin agregado para solicitar permisos de acceso a las fotos del dispositivo
+    "plugins": [
+      [
+      "expo-image-picker",{
+        "photopermissions": "La aplicación necesita acceso a tus fotos para que puedas elegir una imagen"
+      }
+    ]
+  ]
   }
 }
