@@ -6,8 +6,8 @@ import 'react-native-gesture-handler';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 // import screens
-import Login from './screens/Login';
-import Home from './screens/Home';
+import Login from './screens/Login/LoginScreen';
+import Home from './screens/Home/HomeScreen';
 
 /*Main Component*/
 export default function App() {
