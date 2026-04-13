@@ -3,6 +3,10 @@
 # dependencies
 node_modules/
 
+credenciales.js
+
+
+
 # Expo
 .expo/
 dist/
