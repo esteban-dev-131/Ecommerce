@@ -5,11 +5,6 @@ A streamlined mobile application built with **React Native** and **Expo**. This 
 > **Note:** This is a personal project currently under active development.
 
 ## 🚀 Features
-
-* **User Authentication:** Secure login system integrated with Firebase.
-* **Demo Credentials:**
-    * **User:** `usuario@gmail.com`
-    * **Password:** `usuario123`
 * **Product Management:** Dedicated interface for creating new entries including:
     * Product Name
     * Category/Area
