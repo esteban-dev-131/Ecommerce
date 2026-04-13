@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Alert } from "react-native";
-import appFirebase from "../../credenciales";
+import appFirebase from "../../api/credenciales";
 import { getAuth, signInWithEmailAndPassword } from "firebase/auth";
 
 const auth = getAuth(appFirebase);
