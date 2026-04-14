@@ -12,7 +12,7 @@ expo-env.d.ts
 
 #credenciales
 credenciales.js
-
+api/credenciales.ts
 
 # Native
 .kotlin/

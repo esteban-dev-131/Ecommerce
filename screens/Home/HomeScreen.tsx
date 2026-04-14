@@ -4,14 +4,19 @@ import styles from "./HomeStyles";
 import useHome from "./useHome";
 
 export default function Home() {
-  // Un solo hook que devuelve toda la lógica
   const {
-    image, nombre, setNombre, area, setArea,
-    valor, setValor, productos,
-    pickImage, crearProducto,
+    image,
+    nombre,
+    setNombre,
+    area,
+    setArea,
+    valor,
+    setValor,
+    productos,
+    pickImage,
+    crearProducto,
   } = useHome();
 
-  // Solo JSX — cero lógica de negocio aquí
   return (
     <View style={styles.Padre}>
       <View>
@@ -80,7 +85,7 @@ export default function Home() {
 
       {productos.map((producto) => (
         <View style={styles.fila} key={producto.id}>
-          <Image source={{ uri: producto.image }} style={styles.imagenProducto} />
+          <Image source={{ uri: producto.image ?? "" }} style={styles.imagenProducto} />
           <Text style={styles.celda}>{producto.nombre}</Text>
           <Text style={styles.celda}>{producto.area}</Text>
           <Text style={styles.celda}>{producto.valor}</Text>

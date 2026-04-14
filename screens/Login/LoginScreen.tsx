@@ -6,11 +6,15 @@ import {
   TextInput,
   TouchableOpacity,
 } from "react-native";
+import type { StackScreenProps } from "@react-navigation/stack";
 import styles from "./LoginStyles";
 import useLogin from "./useLogin";
+import type { RootStackParamList } from "../../types";
 
-export default function Login(props) {
-  const { email, setEmail, password, setPassword, logueo } = useLogin(props.navigation);
+type LoginScreenProps = StackScreenProps<RootStackParamList, "Login">;
+
+export default function Login({ navigation }: LoginScreenProps) {
+  const { email, setEmail, password, setPassword, logueo } = useLogin(navigation);
 
   return (
     <View style={styles.padre}>

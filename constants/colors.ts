@@ -4,4 +4,6 @@ export const colors = {
   inputBg: "#cccccc40",
   white: "#fff",
   placeholder: "#999",
-};
+} as const;
+
+export type Colors = typeof colors;
